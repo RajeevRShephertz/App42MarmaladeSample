@@ -1,0 +1,5 @@
+SCONS;build_app42marmaladesample_scons_x86;
+SCONS;build_app42marmaladesample_scons_mips;
+SCONS;build_app42marmaladesample_scons_aarch64;
+SCONS;build_app42marmaladesample_scons_naclx86_64;
+SCONS;build_app42marmaladesample_scons_arm;
