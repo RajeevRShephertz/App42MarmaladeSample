@@ -14,6 +14,8 @@
 TestStorageService::TestStorageService()
 {
     storageService = App42API::BuildStorageService();
+    dbName = "Your_DB_Name"; //Replace this with the DB_NAME you created from AppHQ Console
+    collectionName = "Your_Collection_Name";
 }
 
 TestStorageService::~TestStorageService()
@@ -36,10 +38,9 @@ string getJsonString(string key1, string value1,string key2,string value2)
 
 void TestStorageService::insertJsonDocument()
 {
-    const char* dbName = "jsonDocument2";
-    const char* collectionName = "Your_Collection_Name";
+    
     const char* jsonDoc ="{\"name\":\"Nick\",\"age\":30,\"phone\":\"xxx-xxx-xxx\"}";
-    App42API::setLoggedInUser("Shephertz");
+    //App42API::setLoggedInUser("Shephertz");
     //storageService->setAdminKey(APP_ADMIN_KEY);
     
     storageService->InsertJsonDocument(dbName, collectionName, jsonDoc,this, app42callfuncND_selector(TestStorageService::onStorageRequestCompleted));

@@ -3,8 +3,8 @@
 #include "TestStorageService.h"
 #include "TestUserService.h"
 
-#define API_KEY    "67359321652c10b15fd5f659d096a2051745aa4f339b936d6ce5dccb165de863"
-#define SECRET_KEY "2d44878dd428046f23bd4b3807ce83e982db9900f4c5a8305255da4764c76610"
+#define API_KEY    "Enter_Your_API_KEY"
+#define SECRET_KEY "Enter_Your_SECRET_KEY"
 
 // Main entry point for the application
 int main()
@@ -22,7 +22,8 @@ int main()
      * User Service Test
      */
     TestUserService *testUserService = new TestUserService();
-    testUserService->createUser();
+    //testUserService->createUser();
+    testUserService->getAllUser();
     
     /*
      * Storage Service Test
